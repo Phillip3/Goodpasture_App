@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Header.h
 //  Goodpasture
 //
 //  Created by Phillip Trent on 12/26/14.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TweetStorage.h"
 
-@interface ViewController : UIViewController
-
-
+@interface VersusTVC : UITableViewController
+@property (strong, nonatomic) TweetStorage *tweetStorage;
 @end
-
