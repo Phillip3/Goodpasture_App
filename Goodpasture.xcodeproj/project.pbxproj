@@ -35,7 +35,6 @@
 		9DF627861A4E5EAE001A11A0 /* UpcomingEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF627851A4E5EAE001A11A0 /* UpcomingEventsViewController.m */; };
 		9DF627931A4E5EC4001A11A0 /* AboutAgesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF627881A4E5EC4001A11A0 /* AboutAgesViewController.m */; };
 		9DF627941A4E5EC4001A11A0 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF6278A1A4E5EC4001A11A0 /* AboutViewController.m */; };
-		9DF627951A4E5EC4001A11A0 /* AgesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF6278C1A4E5EC4001A11A0 /* AgesTableViewController.m */; };
 		9DF627961A4E5EC4001A11A0 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF6278E1A4E5EC4001A11A0 /* ContactUsViewController.m */; };
 		9DF627971A4E5EC4001A11A0 /* DeveloperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF627901A4E5EC4001A11A0 /* DeveloperViewController.m */; };
 		9DF627981A4E5EC4001A11A0 /* GeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF627921A4E5EC4001A11A0 /* GeneralViewController.m */; };
@@ -128,8 +127,6 @@
 		9DF627881A4E5EC4001A11A0 /* AboutAgesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutAgesViewController.m; path = About/AboutAgesViewController.m; sourceTree = "<group>"; };
 		9DF627891A4E5EC4001A11A0 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = About/AboutViewController.h; sourceTree = "<group>"; };
 		9DF6278A1A4E5EC4001A11A0 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = About/AboutViewController.m; sourceTree = "<group>"; };
-		9DF6278B1A4E5EC4001A11A0 /* AgesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgesTableViewController.h; path = About/AgesTableViewController.h; sourceTree = "<group>"; };
-		9DF6278C1A4E5EC4001A11A0 /* AgesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgesTableViewController.m; path = About/AgesTableViewController.m; sourceTree = "<group>"; };
 		9DF6278D1A4E5EC4001A11A0 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactUsViewController.h; path = About/ContactUsViewController.h; sourceTree = "<group>"; };
 		9DF6278E1A4E5EC4001A11A0 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactUsViewController.m; path = About/ContactUsViewController.m; sourceTree = "<group>"; };
 		9DF6278F1A4E5EC4001A11A0 /* DeveloperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeveloperViewController.h; path = About/DeveloperViewController.h; sourceTree = "<group>"; };
@@ -274,8 +271,6 @@
 				9DF627881A4E5EC4001A11A0 /* AboutAgesViewController.m */,
 				9DF627891A4E5EC4001A11A0 /* AboutViewController.h */,
 				9DF6278A1A4E5EC4001A11A0 /* AboutViewController.m */,
-				9DF6278B1A4E5EC4001A11A0 /* AgesTableViewController.h */,
-				9DF6278C1A4E5EC4001A11A0 /* AgesTableViewController.m */,
 				9DF6278D1A4E5EC4001A11A0 /* ContactUsViewController.h */,
 				9DF6278E1A4E5EC4001A11A0 /* ContactUsViewController.m */,
 				9DF6278F1A4E5EC4001A11A0 /* DeveloperViewController.h */,
@@ -546,7 +541,6 @@
 				9DF6277E1A4E5E5D001A11A0 /* FlickrPhotoViewController.m in Sources */,
 				9DF6277D1A4E5E5D001A11A0 /* FlickrPhotoSetCollectionViewController.m in Sources */,
 				9DF6276A1A4E5E5D001A11A0 /* FlickrFetcher.m in Sources */,
-				9DF627951A4E5EC4001A11A0 /* AgesTableViewController.m in Sources */,
 				9DF627AA1A4F1A6F001A11A0 /* TwitterFetcher.m in Sources */,
 				9DF627831A4E5E72001A11A0 /* AnnouncementsViewController.m in Sources */,
 				9DF627981A4E5EC4001A11A0 /* GeneralViewController.m in Sources */,

@@ -14,38 +14,37 @@ import Foundation
 import UIKit
 
 @objc class HomeModel {
-//    @objc class HomeCell {
-//        let name: String
-//        let circleStrokeColor: UIColor
-//        init(name: String, strokeColor: UIColor) {
-//            self.name = name
-//            self.circleStrokeColor = strokeColor
-//        }
-//        init() {
-//            self.name = ""
-//            self.circleStrokeColor = UIColor.blackColor()
-//        }
-//    }
-//    let sports: HomeCell
-//    let media: HomeCell
-//    let calendar: HomeCell
-//    let grades: HomeCell
-//    let news: HomeCell
-//    let about: HomeCell
-//    
-//    override init() {
-//        self.sports = HomeCell(name: "#Sports",
-//            strokeColor: UIColor.orangeColor())
-//        self.media = HomeCell(name: "Media",
-//            strokeColor: UIColor.greenColor())
-//        self.calendar = HomeCell(name: "Calendar",
-//            strokeColor: UIColor.magentaColor())
-//        self.grades = HomeCell(name: "Grades",
-//            strokeColor: UIColor.redColor())
-//        self.news = HomeCell(name: "News",
-//            strokeColor: UIColor.cyanColor())
-//        self.about = HomeCell(name: "About",
-//            strokeColor: UIColor.purpleColor())
-//        super.init()
-//    }
+    @objc class HomeCell {
+        let name: String
+        let circleStrokeColor: UIColor
+        init(name: String, strokeColor: UIColor) {
+            self.name = name
+            self.circleStrokeColor = strokeColor
+        }
+        init() {
+            self.name = ""
+            self.circleStrokeColor = UIColor.blackColor()
+        }
+    }
+    let sports: HomeCell
+    let media: HomeCell
+    let calendar: HomeCell
+    let grades: HomeCell
+    let news: HomeCell
+    let about: HomeCell
+    
+    init() {
+        self.sports = HomeCell(name: "#Sports",
+            strokeColor: UIColor.orangeColor())
+        self.media = HomeCell(name: "Media",
+            strokeColor: UIColor.greenColor())
+        self.calendar = HomeCell(name: "Calendar",
+            strokeColor: UIColor.magentaColor())
+        self.grades = HomeCell(name: "Grades",
+            strokeColor: UIColor.redColor())
+        self.news = HomeCell(name: "News",
+            strokeColor: UIColor.cyanColor())
+        self.about = HomeCell(name: "About",
+            strokeColor: UIColor.purpleColor())
+    }
 }

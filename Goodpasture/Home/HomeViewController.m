@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 #import "HomeCellView.h"
 #import "TweetStorage.h"
-#import "HomeModel-Swift.h"
+#import "GOODPASTURE-Swift.h"
 
 @interface HomeViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (strong, nonatomic) HomeModel *model;
@@ -27,7 +27,7 @@
 //---------------------------------------
 -(HomeModel *) model
 {
-    if (!_model) _model = [[HomeModel alloc] initWithAllCells];
+    if (!_model) _model = [HomeModel init];
     return _model;
 }
 -(TweetStorage *) tweetStorage

@@ -222,7 +222,7 @@
               NSLog(@"-- error: %@", error);
               errorBlock();
           }];
-         [NetworkIndicator stopNetworkIndicator];
+         [UIApplication sharedApplication].networkActivityIndicatorVisible = false;
      } errorBlock:^(NSError *error) {
          STTwitterAPI *twitterWrapper = [STTwitterAPI twitterAPIAppOnlyWithConsumerKey:CONSUMER_KEY consumerSecret:CONSUMER_SECRET];
          [twitterWrapper verifyCredentialsWithSuccessBlock:^(NSString *username)
@@ -304,7 +304,7 @@
                    NSLog(@"-- error: %@", error);
                    errorBlock();
                }];
-              [NetworkIndicator stopNetworkIndicator];
+              [UIApplication sharedApplication].networkActivityIndicatorVisible = false;
           } errorBlock:^(NSError *error) {
               NSLog(@"-- error: %@", error);
               errorBlock();
@@ -376,7 +376,7 @@
     self.requestsMade ++;
     self.returnedNothing = NO;
     //Make all indicators visible
-    [NetworkIndicator startNetworkIndicator];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = true;
     if (!spinner.isAnimating && spinner)[spinner startAnimating];
     if (!refreshControl.isRefreshing && refreshControl) [refreshControl beginRefreshing];
     
@@ -466,7 +466,7 @@
               NSLog(@"-- error: %@", error);
               errorBlock();
           }];
-         [NetworkIndicator stopNetworkIndicator];
+         [UIApplication sharedApplication].networkActivityIndicatorVisible = false;
      } errorBlock:^(NSError *error) {
          NSLog(@"-- error %@", error);
          errorBlock();

@@ -1842,7 +1842,7 @@ includeMessagesFromFollowedAccounts:(NSNumber *)includeMessagesFromFollowedAccou
     [self getFriendsListForUserID:nil
                      orScreenName:screenName
                            cursor:nil
-                       skipStatus:NO
+                       skipStatus:false
               includeUserEntities:@(YES)
                      successBlock:^(NSArray *users, NSString *previousCursor, NSString *nextCursor) {
                          successBlock(users);
