@@ -13,7 +13,7 @@
 import Foundation
 import UIKit
 
-@objc class HomeModel {
+@objc class HomeModel : NSObject {
     @objc class HomeCell {
         let name: String
         let circleStrokeColor: UIColor
@@ -33,7 +33,7 @@ import UIKit
     let news: HomeCell
     let about: HomeCell
     
-    init() {
+    override init() {
         self.sports = HomeCell(name: "#Sports",
             strokeColor: UIColor.orangeColor())
         self.media = HomeCell(name: "Media",
@@ -46,5 +46,6 @@ import UIKit
             strokeColor: UIColor.cyanColor())
         self.about = HomeCell(name: "About",
             strokeColor: UIColor.purpleColor())
+        super.init()
     }
 }

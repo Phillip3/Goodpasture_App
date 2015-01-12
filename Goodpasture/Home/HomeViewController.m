@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 #import "HomeCellView.h"
 #import "TweetStorage.h"
-#import "GOODPASTURE-Swift.h"
+#import "Goodpasture-Swift.h"
 
 @interface HomeViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (strong, nonatomic) HomeModel *model;
@@ -27,7 +27,7 @@
 //---------------------------------------
 -(HomeModel *) model
 {
-    if (!_model) _model = [HomeModel init];
+    if (!_model) _model = [[HomeModel alloc] init];
     return _model;
 }
 -(TweetStorage *) tweetStorage
@@ -135,7 +135,6 @@
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.destinationViewController respondsToSelector:@selector(setTweetStorage:)]) {
-        
         [segue.destinationViewController setTweetStorage:self.tweetStorage];
     }
 }

@@ -87,9 +87,9 @@
 	if (format == FlickrPhotoFormatOriginal) fileType = [photo objectForKey:@"originalformat"];
 	
 	if (!farm || !server || !photo_id || !secret) {
-        return nil;
         NSLog(@"****ERROR:: no Photo, returned nil");
-    };
+        return nil;
+    }
 	
 	NSString *formatString = @"s";
 	switch (format) {
